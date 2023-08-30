@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blocked URLs</title>
+  <style>
+    table {
+      width: 100%;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Blocked URLs</h2>
+  <table id="urlTable">
+    <tr>
+      <th>URL</th>
+      <th>Blocked</th>
+      <th>Modality</th>
+    </tr>
+  </table>
+  <form id="addForm">
+    <label for="url">URL:</label>
+    <input type="text" id="url" required>
+    <label for="blocked">Blocked:</label>
+    <input type="checkbox" id="blocked">
+    <button type="submit">Add/Update</button>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>
